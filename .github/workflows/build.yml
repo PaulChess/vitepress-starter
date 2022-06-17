@@ -26,5 +26,5 @@ jobs:
     - name: Install dependencies
       run: pnpm install
 
-    - name: Build
-      run: npm run build
+    - name: publish
+      run: nr publish
