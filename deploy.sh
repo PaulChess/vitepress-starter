@@ -14,6 +14,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:PaulChess/vitepress-starter.git main:gh-pages
+git push -f https://github.com/vuejs/vitepress.git main:gh-pages
 
 cd -
