@@ -13,7 +13,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checout@v2
+    - uses: actions/checkout@v2
 
     - name: Install pnpm
       run: npm i pnpm@7 -g
@@ -23,7 +23,8 @@ jobs:
         node-version: '16'
         cache: 'pnpm'
 
+    - name: Install dependencies
+      run: pnpm install
+
     - name: Build
-    - uses: actions/checkout@v1
-      run: deploy.sh
-      shell: bash
+      run: npm run build
