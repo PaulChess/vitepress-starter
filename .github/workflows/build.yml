@@ -26,5 +26,9 @@ jobs:
     - name: Install dependencies
       run: pnpm install
 
-    - name: publish
-      run: nr publish
+    - uses: actions/checkout@v2
+    - name: Run script file
+      run: |
+         chmod +x ./deploy.sh
+         ./deploy.sh
+      shell: bash
