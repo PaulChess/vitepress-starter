@@ -14,6 +14,7 @@ git init
 git add -A
 git commit -m 'deploy'
 
+git config --global init.defaultBranch main
 git push -f https://github.com/vuejs/vitepress.git main:gh-pages
 
 cd -
