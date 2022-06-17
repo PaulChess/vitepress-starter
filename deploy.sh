@@ -4,8 +4,8 @@
 set -e
 
 # build
-ni
-nr docs:build
+pnpm install
+pnpm run docs:build
 
 # navigate into the build
 cd docs/.vitepress/dist
